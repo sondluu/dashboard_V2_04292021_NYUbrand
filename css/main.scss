@@ -1,0 +1,1884 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body {
+    margin: 0;
+    height: 100vh auto;
+    font-family: 'Roboto', sans-serif;
+    background-color:#580F8B;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.38fr 1.2fr 0.4fr;
+    grid-template-rows: .05fr 2fr 3fr 2fr;
+    grid-template-areas:
+        "header header header"
+        "description main main"
+        "description engagement results"
+        "description engagement results";
+        // "footer footer candy";
+    height: 100vh;
+    margin: 0;
+    grid-template-columns: minmax(auto, max-content);
+}
+
+.background {
+    width: 80%
+}
+
+
+
+
+
+main {
+    grid-area: main;
+    background-color: #580F8B;
+
+    .main-container {
+        display: block;
+        background-color: white;
+        margin: 0em .5em 0em .5em;
+        padding: 0em .1em .02em .1em;
+        border-radius: .4em .4em .4em .4em;
+        
+    
+
+    h2 {
+        font-size: 1rem;
+        color: #580F8B;
+        padding: 0 0 0 1rem;
+    }
+
+    #noom_data {
+        border-collapse: collapse;
+        width: 97.5%;
+        border: 3px solid;
+        // verticle-align: top;
+        border-radius: 0.5em;
+        border-collapse: collapse;
+        overflow: hidden;
+        background: rgba(88, 15, 139, 0.6);
+        margin: 0 1rem 1rem 1rem;
+      }
+        
+
+
+    #noom_data td {
+        
+        // height: 1em;
+      /*   border: 2px solid #f4f4f4; */
+        text-align: center;
+        font-size: .9rem;
+        background: white;
+        color: #ed9b33; 
+        font-weight: bold;
+        padding-top: .5em;
+        padding-bottom: 0em;
+        border-radius: .4em white;
+
+        p {
+            font-size: 0.6rem;
+            color: #686868;
+        }
+    }
+
+    #avg_cal {
+        padding: 0em 9em;
+    }
+
+
+    #noom_data th {
+        background: rgba(88, 15, 139, 0.6);
+      /*   border-color: #f4f4f4; */
+        width: 20em;
+        height: 2rem;
+      /*   border: 2px solid #f4f4f4; */
+        text-align: center;
+        font-size: 0.8rem;
+        padding: .6em .5em;
+        color: #F8f5f2;
+      }
+
+      #daily_cal {
+        border-radius: .5em;  
+      }
+    
+      #daily_cal th{
+        height: .5em;
+        font-size: .7rem;
+        width: auto;
+      }
+    
+      #daily_cal td {
+        height: .5em;
+        font-size: .7rem;
+        padding: .5em;
+        width: auto;
+      }
+}
+}
+
+
+
+
+section.description {
+    grid-area: description; 
+    background-color: #580F8B;
+    width: 19.5vw;
+
+    .dashboard-overview {
+        display: block;
+        background-color: #f8f5f2;
+        margin: 0em .5em 0em .5em;
+        padding: 0.2em .65em 0 .8em ;
+        border-radius: .4em;
+    }
+
+    .instructions {
+        display: block;
+        background-color:#f8f5f2;
+        margin: .5em;
+        padding: .1em .3em 0.3em .8em;
+        border-radius: .4em;
+    }
+
+    h2 {
+        font-size: 1rem;
+        color: #580F8B;
+        display: block;
+        padding: 0 0 0 0rem;
+    }
+
+
+    span {
+        font-size: 0.8rem;
+        font-weight: bold;
+        color: #580F8B;
+    }
+
+    p {
+        font-size: 0.635rem;
+        color: #686868;
+        font-weight: bold;
+        padding: .3em .5em -1em .5em;
+        line-height: 1.5em;
+    }
+
+    #note1 {
+        color: #E5554F;
+        font-size: .6rem;
+        padding: 0 0 1.5em 0;
+    }
+
+    #note2 {
+        color: #E5554F;
+        font-size: .6rem;
+    }
+}
+
+
+
+section.engagement {
+    grid-area: engagement;
+    background-color: #580F8B;
+
+    .engagement-container {
+        display: block;
+        background-color: white;
+        margin: .3em .5em 0em .5em;
+        padding: 0em .5em .5em .5em;
+        border-radius: .4em;
+        border-color: none;
+    
+
+    h2 {
+        color: #580F8B;
+        font-size: 1rem;
+        padding: .5em 0.5em 0 0.5em;
+        margin-top: 0.2em;
+
+        
+    }
+
+    p {
+        font-size: .6rem;
+        color: #686868;
+        padding: 0;
+    }
+
+    h5 {
+        font-size: .6rem;
+        color: #686868;
+        padding: 0;
+        margin: 0;
+
+        span {
+            color: #580F8B;
+            font-size: .7rem;
+            padding: 1em 0.5em 0 0;
+            margin-top: 0.2em;
+
+        }
+    }
+
+    .physical-activity {
+        display: block;
+        background: #f8f5f2;
+        margin: 0em .5em .4em .5em;
+        padding: 1em;
+        border-radius: .4em .4em .4em .4em;
+        border-color: none;
+        font-weight: bold;
+
+        #phys {
+            border-collapse: collapse;
+            width: 100%;
+            border: 0px solid #ddd;
+            margin-bottom: 0;
+            color: #686868;
+            margin-top: .5em;
+          }
+          
+          #phys th {
+            width: 10em;
+            height: .5em;
+            border: px solid #ccc;
+            text-align: top;
+            font-size: .45rem;
+          }
+          
+          #phys td {
+            width: 10em;
+            height: .5em;
+            border: px solid #ccc;
+            text-align: top;
+          }
+          
+          
+          #phys td {
+            font-size: .5rem;
+            text-align: center;
+          } 
+
+          #phys_score {
+              display: none;
+          }
+        }
+    }
+
+    .digital-learning {
+        display: block;
+        background: #f8f5f2;
+        margin: 0em .5em .4em .5em;
+        padding: 1em;
+        border-radius: .4em .4em .4em .4em;
+        border-color: none;
+        font-weight: bold;
+
+        #learn {
+            border-collapse: collapse;
+            width: 100%;
+            border: 0px solid #ddd;
+            margin-bottom: 0;
+            color: #686868;
+            margin-top: .5em;
+        }
+          
+        #learn th {
+            width: 10em;
+            height: .5em;
+            border: px solid #ccc;
+            text-align: top;
+            font-size: .45rem;
+        }
+          
+        #learn td {
+            width: 10em;
+            height: .5em;
+            border: px solid #ccc;
+            text-align: top;
+        }
+          
+        #learn td {
+            font-size: .5rem;
+            text-align: center;
+        } 
+
+        #learn_score {
+            display: none;
+
+        }
+    }
+
+    .weigh-in {
+        display: block;
+        background: #f8f5f2;
+        margin: 0em .5em .4em .5em;
+        padding: 1em;
+        border-radius: .4em .4em .4em .4em;
+        border-color: none;
+        font-weight: bold;
+
+        #weigh {
+            border-collapse: collapse;
+            width: 100%;
+            border: 0px solid #ddd;
+            margin-bottom: 0;
+            color: #686868;
+            margin-top: .5em;
+        }
+          
+        #weigh th {
+            width: 10em;
+            height: .5em;
+            border: px solid #ccc;
+            text-align: top;
+            font-size: .45rem;
+        }
+          
+        #weigh td {
+            width: 10em;
+            height: .5em;
+            border: px solid #ccc;
+            text-align: top;
+        }
+          
+        #weigh td {
+            font-size: .5rem;
+            text-align: center;
+        } 
+
+        #weighin_score {
+            text-align: center;
+            display: none;
+        }
+    }
+
+    .communication {
+        display: block;
+        background: #f8f5f2;
+        margin: 0em .5em 0em .5em;
+        padding: 1em;
+        border-radius: .4em .4em .4em .4em;
+        border-color: none;
+        font-weight: bold;
+
+        #comm {
+            border-collapse: collapse;
+            width: 100%;
+            border: 0px solid #ddd;
+            margin-bottom: 0;
+            color: #686868;
+            margin-top: .5em;
+        }
+          
+        #comm th {
+            width: 10em;
+            height: .5em;
+            border: px solid #ccc;
+            text-align: top;
+            font-size: .45rem;
+        }
+          
+        #comm td {
+            width: 10em;
+            height: .5em;
+            border: px solid #ccc;
+            text-align: top;
+        }
+          
+        #comm td {
+            font-size: .5rem;
+            text-align: center;
+        } 
+
+        #comm_score {
+            text-align: center;
+            display: none;
+        }
+    }
+}
+
+section.ddpp {
+    grid-area: footer;
+    background: red;
+}
+
+header {
+    grid-area: header;
+    background: #580F8B;
+    color: #F8F5F2;
+
+    .title {
+        display: flex;
+    }
+
+    .general-info{  //this part contains patient name and general info
+        font-size: 0.6rem;
+        justify-content: space-between;
+        height: auto; 
+        padding-top: 2em;
+        padding-left: 5em;
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            padding: .3rem .1rem 0 0;
+
+            li {
+                padding: 0 2rem 0 0;
+                font-size: 1.2em;
+            }
+
+            span {
+                font-weight: bold;
+                font-size: .7rem;
+            }
+        }
+    }
+
+    h1 {
+        font-size: 1.2rem;
+        display: block;
+        width: 16%;
+        position: relative;
+        padding: .5em .5em 0 .5em;
+    }
+
+    #patient-name {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    img {
+        position: relative;
+        margin-top: 1em;
+        margin-left: 3em;
+    }
+
+    .guide {
+        display: block;
+        background-color: #279989; //1E3932 green
+        margin: 1em 2em 1em .3em;
+        padding: 0em 1.5em 0em 1.5em;
+        border-radius: .4em;
+        width: 40%;
+        height: 5em;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        
+        p {
+            color: white;
+            font-size: .8rem;
+            
+            line-height: 1.5em;
+            position: flex;
+            font-family: 'Varela Round', sans-serif;
+           
+        }
+    }
+}
+
+
+.results {
+    grid-area: results;
+    background-color: #580F8B;
+
+    .results-container {
+        display: block;
+        background-color: white;
+        margin: .3em .5em 0em .5em;
+        padding: 0em .3em .7em .5em;
+        border-radius: .4em;
+        border-color: none;
+
+        .results-info {
+            display: block;
+            background: #f8f5f2;
+            margin: 0em .5em 0em .5em;
+            padding: 1em 1em .1em .5em;
+            border-radius: .4em .4em .4em .4em;
+            border-color: none;
+            font-weight: bold;
+        }
+
+    
+        h2 {
+            color: #580F8B;
+            font-size: 1rem;
+            padding: 0.5em 0.3em 0 0.5em;
+            margin-top: 0.2em;
+        }
+
+
+        #week_number {
+            border-collapse: collapse;
+            width: 54%;
+            border: 3px solid;
+            // verticle-align: top;
+            border-radius: 0.5em;
+            border-collapse: collapse;
+            overflow: hidden;
+            background: rgba(88, 15, 139, 0.6);
+            margin: 0 1em 1.1em 3.5em;
+          }
+          
+          #week_number td {
+            // width: 20rem;
+            // height: 1rem;
+          /*   border: 2px solid #f4f4f4; */
+            text-align: center;
+            font-size: 1rem;
+            background: white;
+            color: #ed9b33; 
+            font-weight: bold;
+            padding: .2em 0 .2em 0;
+          }
+
+          #week_number th {
+            background: rgba(88, 15, 139, 0.6);
+          /*   border-color: #f4f4f4; */
+            width: 20rem;
+            height: 2rem;
+          /*   border: 2px solid #f4f4f4; */
+            text-align: center;
+            font-size: 0.7rem;
+            padding: 0rem;
+            color: #F8f5f2;
+          }
+
+          #p_score {
+            display: none;
+          }
+
+          #w_score {
+              display: none;
+          }
+
+          #l_score {
+              display: none;
+          }
+
+          #c_score {
+              display: none;
+          }
+
+
+          ul {
+            display: flex;
+            list-style-type: none;
+            // padding: .3em .3em 0 1.5em;
+            color: #686868;
+            font-size: .5rem;
+
+            li {
+                padding: 0.5em 0.5em 0.5em 0;
+                font-size: 1.2em;
+            }
+        }
+            
+
+        p {
+            font-size: 0.635rem;
+            color: #686868;
+            font-weight: bold;
+            // padding: .5em .5em -1em .5em;
+            line-height: 1.5em;
+            padding: 0 .2em 0 .7em;
+        }
+
+        #high {
+            font-weight: bold;
+            font-size: .7rem;
+            color: green;
+            padding: 0em;
+        }
+
+        #low {
+            font-weight: bold;
+            font-size: .7rem;
+            color: #ff0000;
+            padding: 0em;
+
+        }
+
+        #engage_def {
+            font-weight: bold;
+            font-size: .7rem;
+            color: #580F8B;
+            padding: 0em;
+        }
+
+          #overall_engagement {
+            border-collapse: collapse;
+            width: 54%;
+            border: 3px solid;
+            // verticle-align: top;
+            border-radius: 0.5em;
+            border-collapse: collapse;
+            overflow: hidden;
+            margin: .7em 1em 1em 3.5em;
+            background: rgba(88, 15, 139, 0.6);
+        
+          }
+          
+          #overall_engagement td {
+            text-align: center;
+            font-size: 1rem;
+            background: white;
+            color: #ed9b33; 
+            font-weight: bold;
+            padding: .2em 0 .2em 0;
+
+          }
+
+          #overall_engagement th {
+            background: rgba(88, 15, 139, 0.6);
+            width: 20rem;
+            height: 2rem;
+            text-align: center;
+            font-size: 0.7rem;
+            padding: 0rem;
+            color: #F8f5f2;
+        }
+
+        
+        #overall_score {
+            display: none;
+          }
+
+    }
+    
+}
+
+
+.hover {
+    border: solid 3px #f8f5f2;
+}
+
+
+.element1 {
+    border: solid 3px rgba(255, 255, 255, 0);
+}
+
+
+.hover2 {
+    border: solid 3px #f8f5f2;
+}
+
+
+.hover3 {
+    border: solid 3px #f8f5f2;
+}
+
+
+
+
+
+
+//1920 x 1080
+
+@media only screen and (width: 1920px) {
+
+
+    section.description {
+    
+        .dashboard-overview {
+            display: block;
+            background-color: #f8f5f2;
+            margin: 0em .5em 0em .5em;
+            padding: 0.2em .65em 0 .8em ;
+            border-radius: .4em;
+        }
+    
+        .instructions {
+            display: block;
+            background-color:#f8f5f2;
+            margin: .5em;
+            padding: .1em .3em 0.1em .8em;
+            border-radius: .4em;
+        }
+    }
+    
+    
+    main {
+        
+        .main-container {
+            display: block;
+            background-color: white;
+            margin: 0.5em .5em 0em .5em;
+            padding: 0em .1em .2em .1em;
+            border-radius: .4em .4em .4em .4em;
+        }
+    }
+  
+  
+    section.engagement .engagement-container {
+      display: block;
+      background-color: white;
+      margin: .3em .5em 0em .5em;
+      padding: 0em .5em .9em .5em;
+      border-radius: .4em;
+      border-color: none;
+    }
+      
+      
+      
+      section.description h2 {
+      font-size: 1.3rem;
+      color: #580F8B;
+      display: block;
+      padding: 0 0 0 0rem;
+    }
+    
+    section.description span {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #580F8B;
+    }
+    
+    section.description p {
+      font-size: 0.8rem;
+      color: #686868;
+      font-weight: bold;
+      padding: .3em .5em -1em .5em;
+      line-height: 1.5em;
+    }
+    
+    section.description #note1 {
+      color: #E5554F;
+      font-size: .8rem;
+      padding: 0 0 1.5em 0;
+    }
+    
+    section.description #note2 {
+      color: #E5554F;
+      font-size: .8rem;
+    }
+      
+      
+      header h1 {
+      font-size: 1.7rem;
+      display: block;
+      width: 16%;
+      position: relative;
+      padding: .5em .5em 0 .5em;
+    }
+      
+      
+      header #patient-name {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+      
+      header .general-info ul li {
+      padding: 0 2rem 0 0;
+      font-size: 1rem;
+    }
+    
+    header .general-info ul span {
+      font-weight: bold;
+      font-size: .9rem;
+    }
+
+      
+      
+      main .main-container h2 {
+      font-size: 1.3rem;
+      color: #580F8B;
+      padding: 0 0 0 1rem;
+    }
+    
+    
+    main .main-container #noom_data td {
+      text-align: center;
+      font-size: 1.2rem;
+      background: white;
+      color: #ed9b33;
+      font-weight: bold;
+      padding-top: .5em;
+      padding-bottom: 0em;
+      border-radius: .4em white;
+    }
+      
+      main .main-container #noom_data th {
+      background: rgba(88, 15, 139, 0.6);
+      width: 20em;
+      height: 2rem;
+      text-align: center;
+      font-size: 1rem;
+      padding: .6em .5em;
+      color: #F8f5f2;
+    }
+    
+    main .main-container #noom_data td p {
+      font-size: .7rem;
+      color: #686868;
+    }
+      
+    
+    section.engagement .engagement-container {
+        display: block;
+        background-color: white;
+        margin: -1.5em .5em 0em .5em;  //changed
+        padding: 0em .5em .9em .5em;
+        border-radius: .4em;
+        border-color: none;
+      }
+
+    
+      section.engagement .engagement-container h2 {
+      color: #580F8B;
+      font-size: 1.3rem;
+      padding: .5em 0.5em 0 0.5em;
+      margin-top: 0.2em;
+    }
+    
+    
+    section.engagement .engagement-container h5 {
+      font-size: 1rem;
+      color: #686868;
+      padding: 0;
+      margin: 0;
+    }
+    
+    section.engagement .engagement-container h5 span {
+      color: #580F8B;
+      font-size: 1.1rem;
+      padding: 1em 0.5em 0 0;
+      margin-top: 0.2em;
+    }
+      
+      
+      section.engagement .engagement-container .physical-activity #phys th {
+      width: 10em;
+      height: .5em;
+      border: px solid #ccc;
+      text-align: top;
+      font-size: .7rem;
+    }
+    
+    
+    section.engagement .engagement-container .physical-activity #phys td {
+      font-size: .8rem;
+      text-align: center;
+    }
+      
+      
+      section.engagement .digital-learning #learn th {
+      width: 10em;
+      height: .5em;
+      border: px solid #ccc;
+      text-align: top;
+      font-size: .7rem;
+    }
+    
+    
+    section.engagement .digital-learning #learn td {
+      font-size: .8rem;
+      text-align: center;
+    }
+    
+      
+      section.engagement .weigh-in #weigh th {
+      width: 10em;
+      height: .5em;
+      border: px solid #ccc;
+      text-align: top;
+      font-size: .7rem;
+    }
+    
+    
+    section.engagement .weigh-in #weigh td {
+      font-size: .8rem;
+      text-align: center;
+    }
+      
+      
+      section.engagement .communication #comm th {
+      width: 10em;
+      height: .5em;
+      border: px solid #ccc;
+      text-align: top;
+      font-size: .7rem;
+    }
+    
+    
+    section.engagement .communication #comm td {
+      font-size: .8rem;
+      text-align: center;
+    }
+      
+      
+      .results .results-container h2 {
+      color: #580F8B;
+      font-size: 1.1rem;  //changed
+      padding: 0.5em 0.3em 0 0.5em;
+      margin-top: 0.2em;
+    }
+    
+    
+    .results .results-container #week_number td {
+      /*   border: 2px solid #f4f4f4; */
+      text-align: center;
+      font-size: 1.5rem;
+      background: white;
+      color: #ed9b33;
+      font-weight: bold;
+      padding: .2em 0.4em .2em 0.4em;
+    }
+      
+      .results .results-container #week_number th {
+      background: rgba(88, 15, 139, 0.6);
+      /*   border-color: #f4f4f4; */
+      width: 20rem;
+      height: 2rem;
+      /*   border: 2px solid #f4f4f4; */
+      text-align: center;
+      font-size: 1rem;
+      padding: 0rem;
+      color: #F8f5f2;
+    }
+      
+      
+      .results .results-container ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      list-style-type: none;
+      color: #686868;
+      font-size: .7rem;
+    }
+    
+    
+    .results .results-container p {
+      font-size: 0.8rem;
+      color: #686868;
+      font-weight: bold;
+      line-height: 1.5em;
+      padding: 0 0em 0 .7em;
+    }
+      
+      
+      .results .results-container ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      list-style-type: none;
+      color: #686868;
+      font-size: .7rem;
+    }
+    
+    .results .results-container ul li {
+      padding: 0.3em 0.5em 0.5em 0;
+      font-size: 1.2em;
+    }
+    
+    
+    
+    .results .results-container #high {
+      font-weight: bold;
+      font-size: 1rem;
+      color: green;
+      padding: 0em;
+    }
+    
+    .results .results-container #low {
+      font-weight: bold;
+      font-size: 1rem;
+      color: #ff0000;
+      padding: 0em;
+    }
+      
+      
+      .results .results-container #overall_engagement td {
+      text-align: center;
+      font-size: 1.5rem;
+      background: white;
+      color: #ed9b33;
+      font-weight: bold;
+      padding: .2em 0 .2em 0;
+    }
+    
+    .results .results-container #overall_engagement th {
+      background: rgba(88, 15, 139, 0.6);
+      width: 20rem;
+      height: 2rem;
+      text-align: center;
+      font-size: 1rem;
+      padding: 0.2em 0.4em 0.2em 0.4em;
+      color: #F8f5f2;
+    }
+      
+      
+      .results .results-container #engage_def {
+      font-weight: bold;
+      font-size: 1rem;
+      color: #580F8B;
+      padding: 0em;
+    }
+      
+      
+      header .guide p {
+      color: white;
+      font-size: 1rem;
+      line-height: 1.5em;
+      position: flex;
+      font-family: 'Varela Round', sans-serif;
+    }
+      
+      header .guide {
+      display: block;
+      background-color: #279989;
+      margin: 1em 2em 1em .3em;
+      padding: 0em 1.5em 0em 1.5em;
+      border-radius: .4em;
+      width: 40%;
+      height: 7em;
+      -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+      
+      
+      .results .results-container {
+      display: block;
+      background-color: white;
+      margin: -1.5em .5em 0em .5em; //changed
+      padding: 0em .3em 0.6em .5em;
+      border-radius: .4em;
+      border-color: none;
+    }
+      
+      
+      .results .results-container #week_number {
+      border-collapse: collapse;
+      width: 54%;
+      border: 3px solid;
+      border-radius: 0.5em;
+      border-collapse: collapse;
+      overflow: hidden;
+      background: rgba(88, 15, 139, 0.6);
+      margin: 0 1em 1em 5em;
+    }
+      
+      
+      .results .results-container #overall_engagement {
+      border-collapse: collapse;
+      width: 54%;
+      border: 3px solid;
+      border-radius: 0.5em;
+      border-collapse: collapse;
+      overflow: hidden;
+      margin: .7em 1em 1.2em 5em;
+      background: rgba(88, 15, 139, 0.6);
+    }
+      
+      
+    main .main-container #daily_cal th {
+      height: .5em;
+      font-size: .7rem;
+      width: auto;
+    }
+    
+    main .main-container #daily_cal td {
+      height: .5em;
+      font-size: .7rem;
+      padding: .45em;
+      width: auto;
+    }
+      
+      
+      section.description .dashboard-overview {
+      display: block;
+      background-color: #f8f5f2;
+      margin: .5em .5em .5em .5em;
+      padding: 0.2em .65em 0 .8em;
+      border-radius: .4em;
+    }
+
+
+    .results .results-container #week_number {
+        border-collapse: collapse;
+        width: 70%; //changed
+        border: 3px solid;
+        border-radius: 0.5em;
+        border-collapse: collapse;
+        overflow: hidden;
+        background: rgba(88, 15, 139, 0.6);
+        margin: 0em 1em 1em 2.5em; // changed
+      }
+        
+        
+        .results .results-container #overall_engagement {
+        border-collapse: collapse;
+        width: 70%; //changed
+        border: 3px solid;
+        border-radius: 0.5em;
+        border-collapse: collapse;
+        overflow: hidden;
+        margin: .7em 1em 1.2em 2.5em;  //changed
+        background: rgba(88, 15, 139, 0.6);
+      }
+
+    .results {
+        
+        .results-container {
+
+            #week_number td {
+                // width: 20rem;
+                // height: 1rem;
+            /*   border: 2px solid #f4f4f4; */
+                text-align: center;
+                font-size: 1rem;
+                background: white;
+                color: #ed9b33; 
+                font-weight: bold;
+                padding: .2em 0.4em .2em 0.4em;
+            }
+    
+              ul {
+                display: flex;
+                list-style-type: none;
+                padding: 0em 0em 0 1.5em;
+                color: #686868;
+                font-size: .5rem;
+    
+                li {
+                    padding: 0.5em;
+                    font-size: 1.5em;
+                }
+                }
+
+                #overall_engagement td {
+                    text-align: center;
+                    font-size: 1rem;
+                    background: white;
+                    color: #ed9b33; 
+                    font-weight: bold;
+                    padding: .2em 0.4em .2em 0.4em;
+        
+                  }
+            }
+        }
+    }
+
+
+
+
+// 1440 x 900
+
+    @media only screen and (width: 1440px) {
+
+        .results .results-container {
+            display: block;
+            background-color: white;
+            margin: -2em .5em 0em .5em;  //changed
+            padding: 0em .3em 0.6em .5em;
+            border-radius: .4em;
+            border-color: none;
+          }
+  
+        .results .results-container .results-info {
+        display: block;
+        background: #f8f5f2;
+        margin: 0em .5em 0em .5em;
+        padding: 1em 1em 0.1em .5em;
+        border-radius: .4em .4em .4em .4em;
+        border-color: none;
+        font-weight: bold;
+      }
+
+
+      .results .results-container {
+
+            h2 {
+                font-size: 0.95rem;
+            }
+            ul {
+                display: flex;
+                list-style-type: none;
+                padding: 0.3em 0em 0.3em 1.5em; //changed
+                color: #686868;
+                font-size: .5rem;
+
+                li {
+                    padding: 0.2em;
+                    font-size: 1.2em;
+                }
+            }
+
+            #week_number td {
+                text-align: center;
+                font-size: 1rem;  //changed
+                background: white;
+                color: #ed9b33; 
+                font-weight: bold;
+                padding: .4em 0 .4em 0; //changed
+            }
+
+            #overall_engagement td {
+                text-align: center;
+                font-size: 1rem;   //changed
+                background: white;
+                color: #ed9b33; 
+                font-weight: bold;
+                padding: .4em 0 .4em 0;  //changed
+    
+              }
+        }
+        
+        
+      main .main-container #daily_cal th {
+        height: .5em;
+        font-size: .7rem;
+        width: auto;
+      }
+      
+      main .main-container #daily_cal td {
+        height: .5em;
+        font-size: .7rem;
+        padding: .2em;
+        width: auto;
+      }
+      
+
+      section.engagement .engagement-container {
+        display: block;
+        background-color: white;
+        margin: -2em .5em 0em .5em;  //changed
+        padding: 0em .5em .9em .5em;
+        border-radius: .4em;
+        border-color: none;
+      }
+
+      section.engagement .engagement-container h5 {
+        font-size: .7rem; //changed
+        color: #686868;
+        padding: 0.35em; //changed
+        margin: 0;
+      }
+      
+      section.engagement .engagement-container h5 span {
+        color: #580F8B;
+        font-size: .8rem;  //changed
+        padding: 1em 0.5em 0.5em 0;  //changed
+        margin-top: 0.2em;
+      }
+        
+        
+        section.engagement .engagement-container .physical-activity #phys th {
+        width: 10em;
+        height: .5em;
+        border: px solid #ccc;
+        text-align: top;
+        font-size: .4rem; //changed
+      }
+      
+      section.engagement .engagement-container .physical-activity #phys td {
+        font-size: .5rem; //changed
+        text-align: center;
+      }
+        
+        section.engagement .digital-learning #learn th {
+        width: 10em;
+        height: .5em;
+        border: px solid #ccc;
+        text-align: top;
+        font-size: .4rem; //changed
+      }
+      
+      
+      section.engagement .digital-learning #learn td {
+        font-size: .5rem;  //changed
+        text-align: center;
+      }
+      
+        
+        section.engagement .weigh-in #weigh th {
+        width: 10em;
+        height: .5em;
+        border: px solid #ccc;
+        text-align: top;
+        font-size: .4rem; //changed
+      }
+      
+      
+      section.engagement .weigh-in #weigh td {
+        font-size: .5rem;  //changed
+        text-align: center;
+      }
+        
+        
+        section.engagement .communication #comm th {
+        width: 10em;
+        height: .5em;
+        border: px solid #ccc;
+        text-align: top;
+        font-size: .4rem;  //changed
+      }
+      
+      
+      section.engagement .communication #comm td {
+        font-size: .5rem; //changed
+        text-align: center;
+      }
+        
+      }
+
+
+
+
+// 1536 x 864
+
+    //   @media only screen and (width: 1536px){
+  
+    //     .results .results-container .results-info {
+    //   display: block;
+    //   background: #f8f5f2;
+    //   margin: 0em .5em 0em .5em;
+    //   padding: 1em 1em 0.5em .5em;
+    //   border-radius: .4em .6em .4em .4em;
+    //   border-color: none;
+    //   font-weight: bold;
+    // }
+      
+      
+    //   section.engagement .engagement-container {
+    //   display: block;
+    //   background-color: white;
+    //   margin: -1.5em .5em 0em .5em;
+    //   padding: 0em .5em .7em .5em;
+    //   border-radius: .4em;
+    //   border-color: none;
+    // }
+      
+    //   .results .results-container {
+    //   display: block;
+    //   background-color: white;
+    //   margin: -1.5em .5em 0em .5em;
+    //   padding: 0em .3em .4em .5em;
+    //   border-radius: .4em;
+    //   border-color: none;
+    // }
+      
+    // }
+
+
+
+
+
+//1680 x 1050
+
+    @media only screen and (width: 1680px){
+  
+
+        .results .results-container {
+          display: block;
+          background-color: white;
+          margin: -5.5em .5em 0em .5em;
+          padding: 0em .3em .4em .5em;
+          border-radius: .4em;
+          border-color: none;
+        }
+          
+          section.engagement .engagement-container {
+          display: block;
+          background-color: white;
+          margin: -5.5em .5em 0em .5em;
+          padding: 0em .5em .4em .5em;
+          border-radius: .4em;
+          border-color: none;
+        }
+
+        main {
+            .main-container {
+        
+            #noom_data {
+                border-collapse: collapse;
+                width: 97.5%;
+                border: 3px solid;
+                border-radius: 0.5em;
+                border-collapse: collapse;
+                overflow: hidden;
+                background: rgba(88, 15, 139, 0.6);
+                margin: 0 1rem .5rem 1rem;
+              }
+            }
+        }
+    }
+
+
+
+
+//2560 x 1440
+@media only screen and (width: 2560px){
+
+    section.description {
+    
+        .dashboard-overview {
+            display: block;
+            background-color: #f8f5f2;
+            margin: 0em .5em 0em .5em;
+            padding: 0.2em .65em 0 .8em ;
+            border-radius: .4em;
+        }
+    
+        .instructions {
+            display: block;
+            background-color:#f8f5f2;
+            margin: .5em;
+            padding: .1em .3em 0.1em .8em;
+            border-radius: .4em;
+        }
+    }
+    
+    
+    main {
+        
+        .main-container {
+            display: block;
+            background-color: white;
+            margin: 0.5em .5em 0em .5em;
+            padding: 0em .1em .2em .1em;
+            border-radius: .4em .4em .4em .4em;
+        }
+    }
+  
+  
+    section.engagement .engagement-container {
+      display: block;
+      background-color: white;
+      margin: -2em .5em 0em .5em;  //changed
+      padding: 0em .5em .9em .5em;
+      border-radius: .4em;
+      border-color: none;
+    }
+      
+      
+      section.description h2 {
+      font-size: 2rem;   // changed
+      color: #580F8B;
+      display: block;
+      padding: 0 0 0 0rem;
+    }
+    
+    section.description span {
+      font-size: 1.5rem;   //changed
+      font-weight: bold;
+      color: #580F8B;
+    }
+    
+    section.description p {
+      font-size: 1rem;   //changed
+      color: #686868;
+      font-weight: bold;
+      padding: .3em .5em -1em .5em;
+      line-height: 1.5em;
+    }
+    
+    section.description #note1 {
+      color: #E5554F;  //changed
+      font-size: 1rem;
+      padding: 0 0 1.5em 0;
+    }
+    
+    section.description #note2 {
+      color: #E5554F;  //changed
+      font-size: 1rem;
+    }
+      
+      
+      header h1 {
+      font-size: 2.5rem;    //changed 
+      display: block;
+      width: 16%;
+      position: relative;
+      padding: 0em .5em 0 .5em;  //changed
+    }
+
+    header {
+    
+        .general-info{  //this part contains patient name and general info
+            font-size: 0.6rem;
+            justify-content: space-between;
+            height: auto; 
+            padding-top: 5em;
+            padding-left: 12em;
+        }
+
+        .title {
+            img {
+                position: relative;
+                margin-top: 1em;
+                margin-left: 5em; //changed
+                }
+        }
+    }
+      
+
+      header #patient-name {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+      
+      header .general-info ul li {
+      padding: 0 2rem 0 0;
+      font-size: 1.3rem;  //changed
+    }
+    
+    header .general-info ul span {
+      font-weight: bold;
+      font-size: 1.5rem;  //changed
+    }
+
+      
+      main .main-container h2 {
+      font-size: 2rem;  //changed
+      color: #580F8B;
+      padding: 0 0 0 1rem;
+    }
+    
+    
+    main .main-container #noom_data td {
+      text-align: center;
+      font-size: 1.5rem;  //changed
+      background: white;
+      color: #ed9b33;
+      font-weight: bold;
+      padding-top: .5em;
+      padding-bottom: 0.2em; //changed
+      border-radius: .4em white;
+    }
+      
+      main .main-container #noom_data th {
+      background: rgba(88, 15, 139, 0.6);
+      width: 20em;
+      height: 2rem;
+      text-align: center;
+      font-size: 1.3rem;  //changed
+      padding: .6em .5em;
+      color: #F8f5f2;
+    }
+    
+    main .main-container #noom_data td p {
+      font-size: .9rem;  //changed
+      color: #686868;
+    }
+      
+      section.engagement .engagement-container h2 {
+      color: #580F8B;
+      font-size: 2rem;   //changed
+      padding: .5em 0.5em 0 0.5em;
+      margin-top: 0.2em;
+    }
+    
+    
+    section.engagement .engagement-container h5 {
+      font-size: 1rem; //changed
+      color: #686868;
+      padding: 0.5em; //changed
+      margin: 0;
+    }
+    
+    section.engagement .engagement-container h5 span {
+      color: #580F8B;
+      font-size: 1.3rem;  //changed
+      padding: 1em 0.5em 0.5em 0;  //changed
+      margin-top: 0.2em;
+    }
+      
+      
+      section.engagement .engagement-container .physical-activity #phys th {
+      width: 10em;
+      height: .5em;
+      border: px solid #ccc;
+      text-align: top;
+      font-size: .8rem; //changed
+    }
+    
+    section.engagement .engagement-container .physical-activity #phys td {
+      font-size: .8rem; //changed
+      text-align: center;
+    }
+      
+      section.engagement .digital-learning #learn th {
+      width: 10em;
+      height: .5em;
+      border: px solid #ccc;
+      text-align: top;
+      font-size: .8rem; //changed
+    }
+    
+    
+    section.engagement .digital-learning #learn td {
+      font-size: .8rem;  //changed
+      text-align: center;
+    }
+    
+      
+      section.engagement .weigh-in #weigh th {
+      width: 10em;
+      height: .5em;
+      border: px solid #ccc;
+      text-align: top;
+      font-size: .8rem; //changed
+    }
+    
+    
+    section.engagement .weigh-in #weigh td {
+      font-size: .8rem;  //changed
+      text-align: center;
+    }
+      
+      
+      section.engagement .communication #comm th {
+      width: 10em;
+      height: .5em;
+      border: px solid #ccc;
+      text-align: top;
+      font-size: .8rem;  //changed
+    }
+    
+    
+    section.engagement .communication #comm td {
+      font-size: .8rem; //changed
+      text-align: center;
+    }
+      
+      
+      .results .results-container h2 {
+      color: #580F8B;
+      font-size: 1.3rem; //changed
+      padding: 0.5em 0.3em 0 0.5em;
+      margin-top: 0.2em;
+    }
+    
+    
+    .results .results-container #week_number td {
+      /*   border: 2px solid #f4f4f4; */
+      text-align: center;
+      font-size: 1.5rem;
+      background: white;
+      color: #ed9b33;
+      font-weight: bold;
+      padding: .2em 0 .2em 0;
+    }
+      
+      .results .results-container #week_number th {
+      background: rgba(88, 15, 139, 0.6);
+      /*   border-color: #f4f4f4; */
+      width: 20rem;
+      height: 2rem;
+      /*   border: 2px solid #f4f4f4; */
+      text-align: center;
+      font-size: 1.3rem; //changed
+      padding: 0.3rem;  //changed
+      color: #F8f5f2;
+    }
+      
+      
+      .results .results-container ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      list-style-type: none;
+      color: #686868;
+      font-size: .7rem;
+    }
+    
+    
+    .results .results-container p {
+      font-size: 1.09rem;  //changed
+      color: #686868;
+      font-weight: bold;
+      line-height: 1.5em;
+      padding: 0 .2em 0 .7em;
+    }
+      
+      
+      .results .results-container ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      list-style-type: none;
+      color: #686868;
+      font-size: .7rem;
+    }
+    
+    .results .results-container ul li {
+      padding: 0.5em 0.5em 0.5em 0;
+      font-size: 1.5em;
+    }
+    
+    
+    
+    .results .results-container #high {
+      font-weight: bold;
+      font-size: 1.3rem;
+      color: green;
+      padding: 0em;
+    }
+    
+    .results .results-container #low {
+      font-weight: bold;
+      font-size: 1.3rem;
+      color: #ff0000;
+      padding: 0em;
+    }
+      
+      
+      .results .results-container #overall_engagement td {
+      text-align: center;
+      font-size: 2rem; //changed
+      background: white;
+      color: #ed9b33;
+      font-weight: bold;
+      padding: .2em 0 .2em 0;
+    }
+    
+    .results .results-container #overall_engagement th {
+      background: rgba(88, 15, 139, 0.6);
+      width: 20rem;
+      height: 2rem;
+      text-align: center;
+      font-size: 1.3rem; //changed
+      padding: 0.3rem;  //changed
+      color: #F8f5f2;
+    }
+      
+      
+      .results .results-container #engage_def {
+      font-weight: bold;
+      font-size: 1.3rem;  //changed
+      color: #580F8B;
+      padding: 0em;
+    }
+
+      
+      header .guide p {
+      color: white;
+      font-size: 1.5rem;  //changed
+      line-height: 1.5em;
+      position: flex;
+      font-family: 'Varela Round', sans-serif;
+    }
+      
+      header .guide {
+      display: block;
+      background-color: #279989;
+      margin: 1em 2em 1em 1em;   //changed
+      padding: 0em 1.5em 0em 1.5em;
+      border-radius: .4em;
+      width: 45%;   //changed
+      height: 10em;
+      -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+      
+      
+      .results .results-container {
+      display: block;
+      background-color: white;
+      margin: -2em .5em 0em .5em;  //changed
+      padding: 0em .3em 0.6em .5em;
+      border-radius: .4em;
+      border-color: none;
+    }
+      
+      
+      .results .results-container #week_number {
+      border-collapse: collapse;
+      width: 54%;
+      border: 3px solid;
+      border-radius: 0.5em;
+      border-collapse: collapse;
+      overflow: hidden;
+      background: rgba(88, 15, 139, 0.6);
+      margin: 0em 1em 1em 7.5em;
+    }
+      
+      
+      .results .results-container #overall_engagement {
+      border-collapse: collapse;
+      width: 54%;
+      border: 3px solid;
+      border-radius: 0.5em;
+      border-collapse: collapse;
+      overflow: hidden;
+      margin: .7em 1em 1.2em 7.5em;
+      background: rgba(88, 15, 139, 0.6);
+    }
+      
+      
+    main .main-container #daily_cal th {
+      height: .5em;
+      font-size: .7rem;
+      width: auto;
+    }
+    
+    main .main-container #daily_cal td {
+      height: .5em;
+      font-size: .7rem;
+      padding: .45em;
+      width: auto;
+    }
+      
+      
+      section.description .dashboard-overview {
+      display: block;
+      background-color: #f8f5f2;
+      margin: .5em .5em .5em .5em;
+      padding: 0.2em .65em 0 .8em;
+      border-radius: .4em;
+    }
+
+
+    .results {
+        
+        .results-container {
+
+            #week_number td {
+                // width: 20rem;
+                // height: 1rem;
+            /*   border: 2px solid #f4f4f4; */
+                text-align: center;
+                font-size: 1.5rem;  //changed
+                background: white;
+                color: #ed9b33; 
+                font-weight: bold;
+                padding: .2em 0 .2em 0;
+            }
+
+            h2 {
+                font-size: 1.9rem; //changed
+            }
+    
+              ul {
+                display: flex;
+                list-style-type: none;
+                padding: 0em 0em 0 1.5em;
+                color: #686868;
+                font-size: .7rem;  //changed
+    
+                li {
+                    padding: 0.5em;
+                    font-size: 1.2rem;  //changed
+                }
+                }
+
+                #overall_engagement td {
+                    text-align: center;
+                    font-size: 1.5rem;  //changed
+                    background: white;
+                    color: #ed9b33; 
+                    font-weight: bold;
+                    padding: .2em 0 .2em 0;
+        
+                  }
+            }
+        }
+    
+    }
